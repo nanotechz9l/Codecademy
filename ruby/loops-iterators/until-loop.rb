@@ -8,9 +8,9 @@ As soon as that condition becomes true, the loop will end.
 =end
 
 counter = 1
-until counter == 10
-  puts "counter"
+until counter == 11
+  puts "#{counter}"
   # Add code to update 'counter' here!
-  
+  counter = counter + 1
   
 end
