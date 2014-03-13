@@ -1,20 +1,23 @@
 #!/usr/bin/env ruby
 
-print "What is your name?"
-user_input = gets.chomp
-user_input.downcase!
+is_true = 2 == 3
 
-if user_input.include? "s"
-    user_input.gsub!(/s/, "th")
-else
-    puts "the letter s was not found."
-end
-puts "Your transformed string is #{user_input}!!"
+is_false = 2 !== 3
 
 =begin
-How might you improve this project? You could:
 
-Add an additional if statement to re-prompt the user for input if they don't enter anything
-Think about how you might account for words in which the letter "c" sounds like an "s"
-Think about how you might preserve the user's original capitalization
+Equal or Not?
+
+In Ruby, we assign values to variables using =, the assignment operator. But if we've already used = for assignment, 
+how do we check to see if two things are equal? Well, we use ==, which is a comparator (also called a relational operator). 
+== means "is equal to." When you type
+
+x = 2
+y = 2
+if x == y
+  print "x and y are equal!"
+end
+
+you're saying: "if x equals y, print 'x and y are equal!'" You can also check to see if two values are not equal using the != comparator.
+
 =end
