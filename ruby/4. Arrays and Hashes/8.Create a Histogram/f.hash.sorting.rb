@@ -33,3 +33,14 @@ This actually returns an array of values, which you can then reverse in-place wi
 frequencies.reverse!
 =end
 
+puts "Enter some text"
+text = gets.chomp
+
+words = text.split
+
+frequencies = Hash.new(0)
+words.each{|word| frequencies[word] += 1
+}
+
+frequencies = frequencies.sort_by { |k, v| v }
+frequencies.reverse!
