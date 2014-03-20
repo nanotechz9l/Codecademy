@@ -13,3 +13,12 @@ Instructions
     Please puts out the value of each pair (just the value, not the key).
 =end
 
+lunch_order = {
+  "Ryan" => "wonton soup",
+  "Eric" => "hamburger",
+  "Jimmy" => "sandwich",
+  "Sasha" => "salad",
+  "Cole" => "taco"
+}
+
+lunch_order.each { |name, food| puts food }
