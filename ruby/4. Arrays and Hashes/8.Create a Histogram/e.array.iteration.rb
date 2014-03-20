@@ -22,10 +22,10 @@ This is why our default is 0. The first time we find the word, it will have a de
 Take a look at the Hint if you need help.
 =end
 
-puts "Enter some text"
-text = gets.chomp
+puts "Enter some text" # puts statement to prompt the user for input.
+text = gets.chomp      # gets.chomp to save this input to a variable called text.
 
-words = text.split
+words = text.split # By calling the .split method on text, we can transform it into an array.
 
 frequencies = Hash.new(0) # initialize new hash to 0
 

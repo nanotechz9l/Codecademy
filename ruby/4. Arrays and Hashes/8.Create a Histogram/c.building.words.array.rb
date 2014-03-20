@@ -10,7 +10,7 @@ Instructions
 Declare a variable called words and set it equal to the result of calling .split on text.
 =end
 
-puts "Please enter some misc text"
-text = gets.chomp
+puts "Enter some text" # puts statement to prompt the user for input.
+text = gets.chomp      # gets.chomp to save this input to a variable called text.
 
-words = text.split
+words = text.split # By calling the .split method on text, we can transform it into an array.

@@ -8,5 +8,5 @@ Instructions
 Use a puts statement to prompt the user for input. Use gets.chomp to save this input to a variable called text.
 =end
 
-puts "Please enter some misc text"
-text = gets.chomp
+puts "Enter some text" # puts statement to prompt the user for input.
+text = gets.chomp      # gets.chomp to save this input to a variable called text.

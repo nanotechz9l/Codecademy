@@ -33,14 +33,15 @@ This actually returns an array of values, which you can then reverse in-place wi
 frequencies.reverse!
 =end
 
-puts "Enter some text"
-text = gets.chomp
+puts "Enter some text" # puts statement to prompt the user for input.
+text = gets.chomp      # gets.chomp to save this input to a variable called text.
 
-words = text.split
+words = text.split # By calling the .split method on text, we can transform it into an array.
 
-frequencies = Hash.new(0)
-words.each{|word| frequencies[word] += 1
+frequencies = Hash.new(0) # initialize new hash to 0
+
+words.each{|word| frequencies[word] += 1 # iterate with each, asign code block, and add "each" word to our freq hash!
 }
 
-frequencies = frequencies.sort_by { |k, v| v }
-frequencies.reverse!
+frequencies = frequencies.sort_by { |k, v| v } # Use .sort_by to sort the frequencies hash by word count, & store the result back in frequencies.
+frequencies.reverse! # Reverse the array order so that the frequencies with the largest counts are first.
