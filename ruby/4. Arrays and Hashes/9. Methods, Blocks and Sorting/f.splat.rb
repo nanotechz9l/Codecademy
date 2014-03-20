@@ -18,3 +18,8 @@ Instructions
 Click Save & Submit Code to test out the example in the editor. Feel free to play around and call what_up on as many bros as you like!
 =end
 
+def what_up(greeting, *bros) # splat operator indicating unknown number of arguments.
+  bros.each { |bro| puts "#{greeting}, #{bro}!" }
+end
+ 
+what_up("What up", "Justin", "Ben", "Kevin Sorbo")
