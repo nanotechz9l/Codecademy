@@ -24,9 +24,10 @@ Instructions
     Create a hash called frequencies in the editor.
     Give it a default value of 0.
 =end
-puts "Please enter some misc text"
-text = gets.chomp
 
-words = text.split
+puts "Enter some text" # puts statement to prompt the user for input.
+text = gets.chomp      # gets.chomp to save this input to a variable called text.
 
-frequencies = Hash.new(0)
+words = text.split # By calling the .split method on text, we can transform it into an array.
+
+frequencies = Hash.new(0) # Initialize new hash to default value of 0!
