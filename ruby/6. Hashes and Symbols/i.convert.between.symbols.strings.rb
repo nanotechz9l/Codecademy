@@ -41,7 +41,7 @@ strings = ["HTML", "CSS", "JavaScript", "Python", "Ruby"]
 symbols = [] # new variable, symbols, and store an empty array in it
 
 strings.each do |x| # Use .each to iterate over the strings array.
-    symbols.push(x.intern ) 
+    symbols.push(x.intern ) # use .push to add that new symbol to symbols.
 end
 
 # Output:
