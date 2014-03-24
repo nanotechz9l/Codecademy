@@ -29,9 +29,12 @@ puts 3 + numbers["one"]
 # prints out "4"
 =end
 
-movies = {}
+movies = {The_Matrix: 3,
+    Silver_Strand: 4,
+    Rotten: 2
+    }
 
-puts "Please enter your favorite movie!"
+puts "What do you want to do (add, update, display, delete)?"
 
 choice = gets.chomp
 
@@ -40,19 +43,24 @@ case choice
     when 'add' 
     puts "What movie do you want to add?"
     title = gets.chomp
+    
     puts "Whats the rating (1-5)?"
     rating = gets.chomp
-    movies[title] = rating
     
-    when 'update' 
-    puts "Updated!"
-
-    when 'display' 
-    puts "Movies!"
-
-    when 'delete' 
-    puts "Deleted!"
-
-else
-    puts "Error!"
+    # Add to hash
+    movies[title] = rating
+    puts "#{title} has been added with a rating of #{rating}!"
+    
 end
+
+
+# Output:
+
+What do you want to do (add, update, display, delete)?
+ add
+What movie do you want to add?
+ matrix
+Whats the rating (1-5)?
+ 1
+matrix has been added with a rating of 1!
+nil
