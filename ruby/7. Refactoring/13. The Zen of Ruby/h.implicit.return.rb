@@ -33,7 +33,7 @@ def multiple_of_three(n)
 end
 
 def multiple_of_three(n)
-  n % 3 == 0 ? "True" : "False"
+  n % 3 == 0 ? "True" : "False" # <----- removed return!
 end
 
 # Output
