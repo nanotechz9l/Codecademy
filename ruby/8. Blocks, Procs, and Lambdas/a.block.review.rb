@@ -11,7 +11,8 @@ end
 [1, 2, 3].each { |num| puts num }
 # ==> Prints 1, 2, 3 on separate lines
 
-# Blocks can be combined with methods like .each and .times to execute an instruction for each element in a collection (like a hash or array).
+# Blocks can be combined with methods like .each and .times to execute an instruction for each element in a collection 
+# (like a hash or array).
 
 
 # Instructions
