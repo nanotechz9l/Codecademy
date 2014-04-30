@@ -1,0 +1,62 @@
+=begin
+Why Procs?
+
+Why bother saving our blocks as procs? There are two main advantages:
+
+    Procs are full-fledged objects, so they have all the powers and abilities of objects. (Blocks do not.)
+    Unlike blocks, procs can be called over and over without rewriting them. This prevents you from having to retype the contents of your block every time you need to execute a particular bit of code.
+
+Instructions
+
+Check out the code in the editor. Man, we had to rewrite that block a bunch of times! Remove the blocks and replace them with a proc called over_4_feet so that the code in the block only needs to be written once.
+?
+Hint
+
+Your proc should look something like this:
+=end
+
+over_4_feet = Proc.new do |height|
+  # Include rest of block code here
+end
+
+# Make sure that when you update each .select that you pass it your proc with the preceding &, like so:
+
+group_1.select(&over_4_feet)
+
+
+# Before
+# Here at the amusement park, you have to be four feet tall
+# or taller to ride the roller coaster. Let's use .select on
+# each group to get only the ones four feet tall or taller.
+
+group_1 = [4.1, 5.5, 3.2, 3.3, 6.1, 3.9, 4.7]
+group_2 = [7.0, 3.8, 6.2, 6.1, 4.4, 4.9, 3.0]
+group_3 = [5.5, 5.1, 3.9, 4.3, 4.9, 3.2, 3.2]
+
+# Complete this as a new Proc
+over_4_feet = ________________
+
+# Change these three so that they use your new over_4_feet Proc
+can_ride_1 = group_1.select { |height| height >= 4 }
+can_ride_2 = group_2.select { |height| height >= 4 }
+can_ride_3 = group_3.select { |height| height >= 4 }
+
+
+# After
+# Here at the amusement park, you have to be four feet tall
+# or taller to ride the roller coaster. Let's use .select on
+# each group to get only the ones four feet tall or taller.
+
+group_1 = [4.1, 5.5, 3.2, 3.3, 6.1, 3.9, 4.7]
+group_2 = [7.0, 3.8, 6.2, 6.1, 4.4, 4.9, 3.0]
+group_3 = [5.5, 5.1, 3.9, 4.3, 4.9, 3.2, 3.2]
+
+# Complete this as a new Proc
+over_4_feet = Proc.new do |height|
+
+# Change these three so that they use your new over_4_feet Proc
+can_ride_1 = group_1.select { |height| }
+can_ride_2 = group_2.select { |height| }
+can_ride_3 = group_3.select { |height| }
+end
+
